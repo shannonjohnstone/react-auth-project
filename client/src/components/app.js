@@ -1,4 +1,4 @@
-import React, { Proptypes } from 'react'
+import React, { PropTypes } from 'react'
 import Header from './header'
 
 const App = ({ children }) => (
@@ -8,6 +8,8 @@ const App = ({ children }) => (
   </div>
 )
 
-App.propTypes = { children: Proptypes.object.isRequired }
+App.propTypes = {
+  children: PropTypes.object.isRequired
+}
 
 export default App
