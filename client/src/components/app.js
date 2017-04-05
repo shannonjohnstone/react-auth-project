@@ -1,9 +1,13 @@
-import React, { Component } from 'react';
+import React, { Proptypes } from 'react'
+import Header from './header'
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>React simple starter</div>
-    );
-  }
-}
+const App = ({ children }) => (
+  <div>
+    <Header />
+    {children}
+  </div>
+)
+
+App.propTypes = { children: Proptypes.object.isRequired }
+
+export default App
